@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enmanuel Hernández – Resume</title>
+  <meta name="description" content="Resume of Enmanuel Hernández, Senior Full-Stack .NET/Angular Developer." />
+  <style>
+    :root { --maxw: 980px; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: #0f1115; color: #e7e9ee; }
+    header { padding: 24px 16px; border-bottom: 1px solid #2a2f3a; }
+    .wrap { max-width: var(--maxw); margin: 0 auto; }
+    h1 { margin: 0 0 6px; font-size: 22px; font-weight: 650; }
+    .sub { opacity: .8; font-size: 14px; }
+    .actions { margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap; }
+    a.btn { text-decoration: none; padding: 10px 14px; border-radius: 10px; border: 1px solid #3a4152; }
+    a.primary { background: #1f6feb; border-color: #1f6feb; color: #fff; }
+    main { padding: 16px; }
+    .frame { width: 100%; height: calc(100vh - 140px); border: 1px solid #2a2f3a; border-radius: 12px; }
+    footer { padding: 14px 16px; border-top: 1px solid #2a2f3a; font-size: 12px; opacity: .75; }
+    @media (max-width: 480px){ .frame { height: calc(100vh - 180px); } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Enmanuel Hernández</h1>
+      <div class="sub">Senior Full-Stack Developer (.NET / Angular)</div>
+      <div class="actions">
+        <a class="btn primary" href="enmanuel_hernandez_resume.pdf" target="_blank" rel="noopener">Open PDF</a>
+        <a class="btn" href="enmanuel_hernandez_resume.pdf" download>Download</a>
+        <a class="btn" href="mailto:enmanuel@example.com?subject=Resume%20-%20Enmanuel%20Hern%C3%A1ndez">Contact</a>
+        <a class="btn" href="https://github.com/eghr0106" target="_blank" rel="noopener">GitHub</a>
+        <!-- Add LinkedIn if you want -->
+        <!-- <a class="btn" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a> -->
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- Embedded PDF viewer -->
+    <iframe class="frame" src="enmanuel_hernandez_resume.pdf#view=FitH" title="Resume PDF"></iframe>
+    <!-- If some browsers block iframe, the button above still works -->
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="y"></span> Enmanuel Hernández</div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
